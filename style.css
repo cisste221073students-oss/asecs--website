@@ -472,4 +472,50 @@ h3 {
 }
 /* MEMBER 10 CONTRIBUTION END */
 
+/*CIS/STE/22/1066 06 CONTRIBUTION START - Program tabs and shared program layout (CSS) */
+.program-tabs,
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.tab-button,
+.filter-button {
+  min-height: 42px;
+  padding: 0 14px;
+  color: var(--green-dark);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tab-button.active,
+.filter-button.active {
+  color: var(--white);
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.tab-panel {
+  display: none;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tab-panel.active {
+  display: grid;
+}
+
+.tab-panel article {
+  padding: 24px;
+}
+
+.tab-panel p {
+  color: var(--muted);
+}
+/* MEMBER 06 CONTRIBUTION END */
 
